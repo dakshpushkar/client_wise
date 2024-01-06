@@ -35,7 +35,7 @@ export default function Queries() {
                   id="name"
                   name="name"
                   class="p-2 bg-secondaryBg border border-solid border-inputBorder rounded focus:outline-none focus:ring w-full md:w-96 focus:border-blue-300"
-                  placeholder="John Doe"
+                  // placeholder="John Doe"
                   required
                 />
               </div>
@@ -53,7 +53,7 @@ export default function Queries() {
                   id="email"
                   name="email"
                   class="p-2 bg-secondaryBg border border-solid border-inputBorder rounded focus:outline-none focus:ring w-full md:w-96 focus:border-blue-300"
-                  placeholder="john.doe@example.com"
+                  // placeholder="john.doe@example.com"
                   required
                 />
               </div>
@@ -71,7 +71,7 @@ export default function Queries() {
                   id="mobile"
                   name="mobile"
                   class="p-2 bg-secondaryBg border border-solid border-inputBorder rounded focus:outline-none focus:ring w-full md:w-96 focus:border-blue-300"
-                  placeholder="123-456-7890"
+                  // placeholder="+9198765423"
                   required
                 />
               </div>

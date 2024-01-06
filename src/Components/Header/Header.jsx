@@ -1,10 +1,16 @@
 import React, { useState } from "react";
-
+import { Link, animateScroll as scroll } from "react-scroll";
 export const Header = () => {
   const [showHamburger, setShowHamburger] = useState(false);
 
   const handleToggleMobileMenu = () => {
     setShowHamburger(!showHamburger);
+  };
+  const scrollToBenefits = () => {
+    scroll.scrollTo("benefitsSection" , "footer", {
+      smooth: true,
+      duration: 500,
+    });
   };
 
   return (
@@ -18,7 +24,7 @@ export const Header = () => {
           />
 
           {/* Hamburger menu for small screens */}
-          <div className="lg:hidden">
+          <div className="md:hidden">
             <button
               data-collapse-toggle="mobile-menu-2"
               type="button"
@@ -49,15 +55,20 @@ export const Header = () => {
           {/* Header links for larger screens */}
           <div className="hidden md:flex max-auto items-center">
             <div className="flex items-center gap-10">
-              <h3 className="text-secondary md:text-[18px] font-medium">
-                Key Benefits
-              </h3>
+              <Link to="benefitsSection" smooth={true} duration={500}>
+                <h3 className="text-secondary md:text-[18px] font-medium">
+                  Key Benefits
+                </h3>
+              </Link>
+
               <h3 className="text-secondary md:text-[18px] font-medium">
                 Blog
               </h3>
+              <Link to="footer" smooth={true} duration={500}>
               <h3 className="text-secondary md:text-[18px] font-medium">
                 Contact
               </h3>
+              </Link>
             </div>
 
             <div className="flex items-center ml-10">

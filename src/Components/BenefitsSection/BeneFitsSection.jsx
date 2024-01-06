@@ -11,7 +11,7 @@ export default function BeneFitsSection() {
   ];
 
   return (
-    <div class="mt-16 md:mt-14 lg:mt-24">
+    <div class="mt-16 md:mt-14 lg:mt-24" id="benefitsSection">
       <div class="text-center">
         <p class="text-secondary px-10 py-10 md:px-0 md:py-0 font-bold text-2xl md:text-3xl lg:text-4xl">
           All prospects, leads, clients at your fingertips, lifelong for free{" "}

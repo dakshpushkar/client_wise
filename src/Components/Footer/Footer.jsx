@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer class="bg-secondaryBg mt-24">
+    <footer class="bg-secondaryBg mt-24" id="footer">
       <div class="flex flex-wrap md:justify-between px-36 md:px-20 lg:px-36 pt-14">
         <email class="flex gap-2 justify-center">
           <img src="src/assets/message.svg" alt="" />
