@@ -18,8 +18,8 @@ export const Header = () => {
       <nav className="bg-white border-gray-200 px-14 py-6">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="mr-3 h-6 sm:h-9"
+            src="src/assets/company_logo.svg"
+            className="mr-3 h-6"
             alt="Flowbite Logo"
           />
 
@@ -55,24 +55,24 @@ export const Header = () => {
           {/* Header links for larger screens */}
           <div className="hidden md:flex max-auto items-center">
             <div className="flex items-center gap-10">
-              <Link to="benefitsSection" smooth={true} duration={500}>
-                <h3 className="text-secondary md:text-[18px] font-medium">
+              <Link  to="benefitsSection" smooth={true} duration={700}>
+                <h3 className="text-secondary md:text-[18px] font-medium cursor-pointer">
                   Key Benefits
                 </h3>
               </Link>
 
-              <h3 className="text-secondary md:text-[18px] font-medium">
+              <h3 className="text-secondary md:text-[18px] font-medium cursor-pointer">
                 Blog
               </h3>
-              <Link to="footer" smooth={true} duration={500}>
-              <h3 className="text-secondary md:text-[18px] font-medium">
+              <Link to="footer" smooth={true} duration={700}>
+              <h3 className="text-secondary md:text-[18px] font-medium cursor-pointer">
                 Contact
               </h3>
               </Link>
             </div>
 
             <div className="flex items-center ml-10">
-              <button className="text-white font-medium rounded text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 bg-primary">
+              <button className="text-white font-medium rounded text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 bg-primary cursor-pointer">
                 Get App for Free
               </button>
             </div>
@@ -117,15 +117,19 @@ export const Header = () => {
 
         {/* Mobile menu links */}
         <div className="flex flex-col items-center">
+        <Link onClick={handleToggleMobileMenu} to="benefitsSection" smooth={true} duration={700}>
           <h3 className="text-secondary md:text-[18px] font-medium mt-4">
             Key Benefits
           </h3>
+          </Link>
           <h3 className="text-secondary md:text-[18px] font-medium mt-4">
             Blog
           </h3>
+          <Link onClick={handleToggleMobileMenu} to="footer" smooth={true} duration={700}>
           <h3 className="text-secondary md:text-[18px] font-medium mt-4">
             Contact
           </h3>
+          </Link>
 
           <div className="mt-4">
             <button className="text-white font-medium rounded text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 bg-primary">

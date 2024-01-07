@@ -3,7 +3,7 @@ import React from "react";
 export default function Trail() {
   return (
   <div class="flex justify-center items-center bg-secondaryBg">
-  <div class="text-secondary w-[937px] lg:w-full text-center m-14 font-medium text-xl  md:text-3xl  pl-4">
+  <div class="text-secondary w-[937px] lg:w-full text-center my-14 mx-2 md:mx-14 font-medium text-xl  md:text-3xl  pl-4">
     <p>
       Maintain records and status of all your clients online, get AI-powered Insights and Policy Summaries to double your business income
     </p>

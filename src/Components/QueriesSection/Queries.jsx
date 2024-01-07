@@ -4,12 +4,12 @@ export default function Queries() {
   return (
     <querie>
     <div class="bg-secondaryBg md:py-24 py-10">
-      <div class="text-center text-sm md:text-2xl lg:text-4xl md:font-normal lg:font-medium text-secondary">
+      <div class="text-center text-2xl md:text-4xl  md:font-bold font-medium text-secondary">
         <h1>Download for Free</h1>
       </div>
       <wrapper class="flex flex-col md:flex-row  justify-center md:justify-evenly md:mt-11 mt-6">
         <leftContainer class="w-full md:w-1/3 mb-6 md:mb-0">
-          <div class="text-center  text-2xl font-medium">
+          <div class="text-center text-lg md:text-2xl font-medium">
             <h5>Scan QR to get your free trial today</h5>
           </div>
           <scannerImage class="justify-center flex">
